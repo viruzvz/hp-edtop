@@ -1,0 +1,21 @@
+// Vendors
+@import "@/styles/vendors/bootstrap";
+@import "@/styles/vendors/font-awesome";
+@import "@/styles/vendors/google-fonts";
+
+// Componentes
+@import "@/styles/components/fan";
+@import "@/styles/components/hello";
+
+.Ola {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  /* stylelint-disable-next-line plugin/no-unsupported-browser-features */
+  cursor: none;
+  background: linear-gradient(35deg, dodgerblue, deeppink);
+  overflow: hidden;
+  user-select: none;
+}

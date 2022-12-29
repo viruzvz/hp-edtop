@@ -1,0 +1,16 @@
+doctype html
+html(lang='en')
+  head
+    title Olá, mundo!
+    link(rel='stylesheet', href='styles/main.scss')
+    link(rel='icon', type='image/svg+xml', href='assets/favicon.svg')
+    script(src='../node_modules/jquery/dist/jquery.js')
+
+  body.Ola
+    .Fan(data-fan)
+      i.Fan-icon.fas.fa-star
+
+    .Hello.has-shadow
+      | Olá!
+
+    script(type='module', src='scripts/main.js')

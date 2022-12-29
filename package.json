@@ -1,0 +1,46 @@
+{
+  "name": "arquetipo-parcel",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "source": "src/index.pug",
+  "scripts": {
+    "prebuild": "rimraf dist/*",
+    "build": "parcel build --public-url /",
+    "dev": "parcel",
+    "fmt": "prettier --write src/**/*.{js,jsx,pug}",
+    "lint": "stylelint src/**/*.scss && eslint src --ext js,jsx"
+  },
+  "browserslist": ">0.3% in BR, last 2 Firefox versions, last 2 Edge versions, not ie 11, not op_mini all",
+  "prettier": "@webcoti/prettier-config",
+  "eslintConfig": {
+    "extends": "@webcoti/eslint-config"
+  },
+  "stylelint": {
+    "extends": "@webcoti/stylelint-config"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "bootstrap": "^4",
+    "jquery": "^3.6.1",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.8.0",
+    "@parcel/transformer-sass": "^2.8.0",
+    "@prettier/plugin-pug": "^2.3.0",
+    "@webcoti/eslint-config": "^1.6.1",
+    "@webcoti/prettier-config": "^1.6.0",
+    "@webcoti/stylelint-config": "^1.5.0",
+    "eslint": "^8.28.0",
+    "parcel": "^2.8.0",
+    "prettier": "^2.8.0",
+    "rimraf": "^3.0.2",
+    "stylelint": "^14.15.0"
+  },
+  "alias": {
+    "@/*": "./src/$1",
+    "jquery": {
+      "global": "jQuery"
+    }
+  }
+}
