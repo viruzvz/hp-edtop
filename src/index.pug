@@ -1,16 +1,53 @@
 doctype html
-html(lang='en')
+html(lang="pt")
   head
-    title Olá, mundo!
+    title parcel
     link(rel='stylesheet', href='styles/main.scss')
+    link(rel='stylesheet', href='styles/style.css')
     link(rel='icon', type='image/svg+xml', href='assets/favicon.svg')
     script(src='../node_modules/jquery/dist/jquery.js')
 
-  body.Ola
-    .Fan(data-fan)
-      i.Fan-icon.fas.fa-star
-
-    .Hello.has-shadow
-      | Olá!
-
+  body
+    header
+      nav.nav-global
+        figure
+          img(src="#", alt="")
+          figcaption Escola de Doutrinas de Técnicas Operacionais
+        .nav-interative
+          a(href="#" title="buscar")
+            i.fa-solid.fa-magnifying-glass
+          span |
+          a(href="#" title="facebook")
+            i.fa-brands.fa-facebook
+          a(href="#" title="instagram")
+            i.fa-brands.fa-instagram
+          a(href="#" title="whatsapp")
+            i.fa-brands.fa-whatsapp
+      .hero
+        .hero-overimage
+          img(src="#", alt="")
+        .container.mx-auto
+          article
+            p Nós criamos produtos digitais
+            h1 Provendo cursos online
+              small Conteúdos para consurso público, legislação, constituição, polícia legislativa.
+            .btn-group
+              a.btn(href="#" title="Começe agora")
+                span Comece agora
+                i.fa-solid.fa-circle-arrow-right
+              a.btn-play(href="#" title="assista agora")
+                span Assista agora
+      nav.nav-primary
+        ul
+          li Home
+          li Sobre
+          li Cursos
+          li Artigos
+          li Contatos
+    section.cursos
+      .container.mx-auto
+        .grid.grid-cols-1(class="lg:grid-cols-2")
+          .content 1
+          .content 2
+          
     script(type='module', src='scripts/main.js')
