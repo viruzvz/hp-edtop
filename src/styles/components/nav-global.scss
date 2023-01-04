@@ -1,0 +1,24 @@
+.nav-global {  
+	display: flex;
+	align-items: center;
+	padding: 5px 15px;
+
+	> div {
+		display: flex;
+	}
+	> :last-child,
+	> :first-child {
+		flex: 1 1 0%;
+	}
+
+	> :last-child {
+		justify-content: flex-end;
+	}
+	figure {
+		margin: 0;
+	}
+	figcaption {
+		display: inline;
+		margin-left: 15px;
+	}
+}

@@ -1,4 +1,4 @@
-import $ from 'jquery'
+
 
 let coords = [0, 0]
 const fan = document.querySelector('[data-fan]')

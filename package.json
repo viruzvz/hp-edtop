@@ -32,15 +32,11 @@
     "@webcoti/prettier-config": "^1.6.0",
     "@webcoti/stylelint-config": "^1.5.0",
     "autoprefixer": "^10.4.13",
-    "cssnano": "^5.1.14",
     "eslint": "^8.28.0",
     "parcel": "^2.8.0",
-    "postcss": "^8.4.20",
-    "postcss-import": "^15.1.0",
     "prettier": "^2.8.0",
     "rimraf": "^3.0.2",
-    "stylelint": "^14.15.0",
-    "tailwindcss": "^3.2.4"
+    "stylelint": "^14.15.0"
   },
   "alias": {
     "@/*": "./src/$1",
