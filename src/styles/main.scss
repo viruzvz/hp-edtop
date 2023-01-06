@@ -1,3 +1,8 @@
+
+// variaveis edtop
+$edtop-primary: #101946;
+$edtop-secondary: #CCAA3C;
+
 // Vendors
 @import "@/styles/vendors/bootstrap";
 @import "@/styles/vendors/font-awesome";
@@ -7,5 +12,11 @@
 @import "@/styles/components/fan";
 @import "@/styles/components/hello";
 @import "@/styles/components/nav-global";
+@import "@/styles/components/mtitle.scss";
+@import "@/styles/components/sizes.scss";
+@import "@/styles/components/item-icon.scss";
 
-
+body {
+    font-size: 16px;
+    background-color: #333;
+}

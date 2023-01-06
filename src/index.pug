@@ -14,7 +14,7 @@ html(lang="pt")
           img(src="assets/logo1.svg", alt="")
           figcaption Escola de Doutrinas de Técnicas Operacionais
         .nav-interative
-          a(href="#" title="buscar")
+          a(title="buscar")
             i.fa-solid.fa-magnifying-glass
           span |
           a(href="#" title="facebook")
@@ -27,16 +27,22 @@ html(lang="pt")
         .hero-overimage
           img(src="#", alt="")
         .container
-          article
-            p Nós criamos produtos digitais
-            h1 Provendo cursos online
-              small Conteúdos para consurso público, legislação, constituição, polícia legislativa.
-            .btn-group
-              a.btn(href="#" title="Começe agora")
-                span Comece agora
-                i.fa-solid.fa-circle-arrow-right
-              a.btn-play(href="#" title="assista agora")
-                span Assista agora
+          .row
+            .col-8
+              article
+                a.mtitle.mtitle-secondary.text-xl(href='#') Nós criamos produtos digitais
+                h1.text-xl6 Provendo cursos online
+                p.text-xl2 Conteúdos para consurso público, legislação, constituição, polícia legislativa.
+                div
+                  a.btn.btn-danger(href="#" title="Começe agora")
+                    strong Comece agora &nbsp;
+                    i.fa-solid.fa-circle-arrow-right
+                  .rtin-video
+                    .item-icon
+                      a.rtin-play.rt-video-popup(href='')
+                        span.play-icon
+                          i.fas.fa-play
+            
       nav.nav-primary
         ul
           li Home
