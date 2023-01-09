@@ -14,9 +14,14 @@ $edtop-secondary: #CCAA3C;
 @import "@/styles/components/nav-global";
 @import "@/styles/components/mtitle.scss";
 @import "@/styles/components/sizes.scss";
-@import "@/styles/components/item-icon.scss";
+@import "@/styles/components/iplay.scss";
+@import "@/styles/components/hero.scss";
 
 body {
-    font-size: 16px;
-    background-color: #333;
+  font-size: 16px;
+  background-color: #333;
+}
+
+h1 {
+  color: white;
 }

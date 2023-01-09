@@ -1,0 +1,8 @@
+.hero {
+  background: linear-gradient(90deg, rgba(27,43,119,1) 0%, rgba(16,25,70,1) 100%);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 3px solid $edtop-secondary;
+}
