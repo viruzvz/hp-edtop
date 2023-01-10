@@ -3,12 +3,11 @@ html(lang="pt")
   head
     title parcel
     link(rel='stylesheet', href='styles/main.scss')
-    link(rel='stylesheet', href='styles/style.css')
     link(rel='icon', type='image/svg+xml', href='assets/favicon.svg')
     script(src='../node_modules/jquery/dist/jquery.js')
 
   body
-    header
+    header.header
       nav.nav-global
         figure
           img(src="assets/logo1.svg", alt="")
@@ -44,13 +43,8 @@ html(lang="pt")
                         span.iplay-caption Assista agora
             
       nav.nav-primary
-        ul
-          li Home
-          li Sobre
-          li Cursos
-          li Artigos
-          li Contatos
-    section.cursos
-      .container
+        include nav-ul.pug
+    section.cursos        
+      h1 aloooo
           
     script(type='module', src='scripts/main.js')

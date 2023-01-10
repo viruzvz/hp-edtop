@@ -1,0 +1,15 @@
+.nav-primary {
+  background-color: white;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+    display: inline-flex;
+  }
+}

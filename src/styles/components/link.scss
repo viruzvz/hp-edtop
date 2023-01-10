@@ -1,0 +1,80 @@
+.link {
+	transition: all 0.2s linear;
+		&:hover {
+			text-decoration: none;
+		}
+}
+
+.link-footer {
+  font-size: 12px;
+  color: #fff;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.link-nav {
+  text-transform: uppercase;
+  color: #333;
+	font-size: 16px;
+	padding: 10px 15px;
+	font-weight: 500;
+  &:hover {
+    color: $edtop-secondary;
+  }
+}
+
+.link-facebook,
+.link-whatsapp,
+.link-youtube,
+.link-instagram {
+  color: #fff;
+}
+
+.link-facebook {
+  &:hover {
+    color: $facebook;
+  }
+}
+
+.link-whatsapp {
+  &:hover {
+    color: $whatsapp;
+  }
+}
+
+.link-youtube {
+  &:hover {
+    color: $youtube;
+  }
+}
+
+.link-instagram {
+  &:hover {
+    color: $instagram;
+  }
+}
+
+.link-primary {
+  color: $primary;
+  &:hover {
+    color: $secondary;
+  }
+}
+
+.link-card {
+  display: flex;
+  .caption-card {
+    background-color:rgba(10,45,61,0.7);
+    transition: background-color 0.5s ease;
+    &:hover {
+      background-color:rgba(10,45,61,0);
+    }
+  }
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: 4px solid $edtop-secondary;
+  color: $edtop-primary;
+}

@@ -4,7 +4,7 @@
 	padding: 5px 15px;
 	background-color: #fff;
 	border-bottom: 3px solid $edtop-secondary;
-	box-shadow: 0 5px 10px 0 rgba(0,0,0,0.4);
+	box-shadow: $edtop-boxshadow;
 
 	> div {
 		display: flex;

@@ -2,6 +2,14 @@
 // variaveis edtop
 $edtop-primary: #101946;
 $edtop-secondary: #CCAA3C;
+// social
+$facebook: #3B5998;
+$instagram: #DD2A7B;
+$youtube: #E62117;
+$whatsapp: #25D366;
+$twitter: #00ACEE;
+// shadows 
+$edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 
 // Vendors
 @import "@/styles/vendors/bootstrap";
@@ -16,6 +24,8 @@ $edtop-secondary: #CCAA3C;
 @import "@/styles/components/sizes.scss";
 @import "@/styles/components/iplay.scss";
 @import "@/styles/components/hero.scss";
+@import "@/styles/components/nav-primary.scss";
+@import "@/styles/components/link.scss";
 
 body {
   font-size: 16px;
@@ -24,4 +34,12 @@ body {
 
 h1 {
   color: white;
+}
+
+.header {
+  box-shadow: $edtop-boxshadow;
+}
+
+.cursos {
+  background-color: #fff;
 }
