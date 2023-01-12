@@ -1,0 +1,26 @@
+
+.banner {
+  height: 120px;
+  background-color: #666;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+
+  .left-b, .right-b {
+    top:0;
+    position: absolute;
+  }
+  .left-b {
+    left: 15px;
+  }
+  .right-b {
+    right: 15px;
+  }
+  .caption {
+    max-width: 50%;
+    color: #fff;
+    font-weight: bolder;
+    font-size: $-xl2;
+  }
+}

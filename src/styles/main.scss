@@ -26,6 +26,9 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/components/hero.scss";
 @import "@/styles/components/nav-primary.scss";
 @import "@/styles/components/link.scss";
+@import "@/styles/components/banner.scss";
+@import "@/styles/components/carpet.scss";
+@import "@/styles/components/baloon.scss";
 
 body {
   font-size: 16px;
@@ -42,4 +45,32 @@ h1 {
 
 .cursos {
   background-color: #fff;
+  background-image: url("../assets/shape10.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 3px solid $edtop-secondary;
+}
+
+.videos {
+  background-color: #fff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/shape30.png");
+}
+
+.players {
+  display: flex;
+  .players-item {
+    margin: 15px;
+  }
+}
+
+.divider {
+  height: 13px;
+  background-image: url('../assets/divider.png');
+  background-repeat: repeat-x;
+}
+
+.btn-xl {
+  padding: 30px;
 }

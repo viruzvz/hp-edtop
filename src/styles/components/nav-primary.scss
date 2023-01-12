@@ -3,10 +3,11 @@
   padding: 0 15px;
   display: flex;
   justify-content: center;
+  box-shadow: $edtop-boxshadow;
 }
 
 .nav-ul {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   li {
     list-style: none;

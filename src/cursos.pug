@@ -1,0 +1,34 @@
+.container
+  .row
+    .col-6
+      a.mtitle.mtitle-secondary.text-xl.mb-2(href='#') Cursos
+      h2.text-xl7 Vídeos Aulas
+      p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, officiis assumenda quasi tenetur placeat voluptate aliquam optio rerum laboriosam similique dolore perspiciatis quis, quas eaque nemo soluta velit sit. Perspiciatis.
+      .group-span
+        mixin span(text)
+          span
+            i.fa-solid.fa-circle-check
+            = text
+        +span('Lorem Ipsum toxy')
+        +span('Lorem Ipsum toxy amenium')
+        +span('Lorem Ipsum toxy amenium')
+      .group-span
+        +span('Lorem Ipsum toxy')
+        +span('Lorem Ipsum toxy amenium')
+        +span('Lorem Ipsum toxy amenium')
+    .col-6
+      // 4:3 aspect ratio
+      .embed-responsive.embed-responsive-4by3
+        iframe.embed-responsive-item(src='https://www.youtube.com/embed/DKUmf_G3Ld0')
+    .col-12.py-5
+      .divider
+
+    .col-12
+      .banner
+        .caption
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolorum!
+        a.btn.btn-danger.text-xl2.btn-xl(href="#" title="Adquirir todos os Cursos")
+          strong Adquirir Todos os Cursos 
+          i.fa-solid.fa-circle-arrow-right
+        img.left-b(src="assets/left-b.svg")
+        img.right-b(src="assets/right-b.svg")

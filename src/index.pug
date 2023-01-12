@@ -7,7 +7,7 @@ html(lang="pt")
     script(src='../node_modules/jquery/dist/jquery.js')
 
   body
-    header.header
+    header
       nav.nav-global
         figure
           img(src="assets/logo1.svg", alt="")
@@ -42,9 +42,16 @@ html(lang="pt")
                           i.iplay-i.fas.fa-play
                         span.iplay-caption Assista agora
             
-      nav.nav-primary
-        include nav-ul.pug
-    section.cursos        
-      h1 aloooo
+    section.content
+      nav.navbar.navbar-expand-lg.nav-primary
+        a.navbar-brand(href='#') Navbar
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          include nav-ul.pug
+      section.py-5.cursos
+        include cursos.pug
+      section.py-5.videos
+        include videos.pug
           
     script(type='module', src='scripts/main.js')
