@@ -1,0 +1,26 @@
+.container
+  .row
+    .col-6
+      .d-flex
+        .item
+          figure
+            img.img-fluid(src="assets/book1.png" alt="apostila")
+        .item
+          h2.text-xl2 Cursos em PDF
+          ul
+            mixin lipdf(text)
+              li
+                i.fa-solid.fa-circle-check
+                span
+                  = text
+            +lipdf('PDF + VÍDEO')
+            +lipdf('Constituição concursos')
+            +lipdf('Atividade legislativa')
+            +lipdf('Operações táticas')
+            +lipdf('Judiciário e penal')
+            +lipdf('Aplicações e provas')
+    .col-6
+      a.mtitle.mtitle-secondary.text-xl.mb-2(href='#') Sobre
+      h2.text-xl2 EDTOP:
+      p
+        stron Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos accusamus aliquam optio, voluptatum, quam, voluptates esse ipsa maiores itaque nobis perferendis. Vero autem laborum numquam quas est laboriosam voluptas!

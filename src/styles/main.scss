@@ -59,6 +59,12 @@ h1 {
   position: relative;
 }
 
+.sobre {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/shape11.png");
+}
+
 .players {
   display: flex;
   .players-item {
