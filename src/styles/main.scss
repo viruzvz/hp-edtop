@@ -29,6 +29,8 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/components/banner.scss";
 @import "@/styles/components/carpet.scss";
 @import "@/styles/components/baloon.scss";
+@import "@/styles/components/bgrounded.scss";
+@import "@/styles/components/colors.scss";
 
 body {
   font-size: 16px;
@@ -80,4 +82,41 @@ h1 {
 
 .btn-xl {
   padding: 30px;
+}
+
+.edtop {
+  background-image: url("../assets/Logo-2.png");
+  background-color: #1f295d;
+  height: 600px;
+  background-attachment: fixed;
+  background-position: 50% bottom;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.contatos {
+  background-color: #181925;
+  background-image: url('../assets/mapa.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% -5%;
+  height: 600px;
+  display: flex;
+  border-bottom: 3px solid $edtop-secondary;
+  .contatos-frendly {
+    background-image: url('../assets/coruja.png');
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+}
+
+.footer {
+  background-color: #090E29;
+  background-image: url('../assets/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

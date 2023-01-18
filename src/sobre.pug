@@ -1,17 +1,20 @@
 .container
   .row
     .col-6
-      .d-flex
-        .item
+      .row
+        .col-12
+          h2.text-xl6.c-primary.mb-4
+            strong Cursos em PDF
+        .col-6
           figure
             img.img-fluid(src="assets/book1.png" alt="apostila")
-        .item
-          h2.text-xl2 Cursos em PDF
-          ul
+        .col-6
+
+          ul.list-unstyled
             mixin lipdf(text)
-              li
-                i.fa-solid.fa-circle-check
-                span
+              li.c-primary.text-lg.mb-4
+                i.fa-solid.fa-circle-check.text-danger &nbsp; 
+                strong
                   = text
             +lipdf('PDF + VÍDEO')
             +lipdf('Constituição concursos')
@@ -20,7 +23,15 @@
             +lipdf('Judiciário e penal')
             +lipdf('Aplicações e provas')
     .col-6
-      a.mtitle.mtitle-secondary.text-xl.mb-2(href='#') Sobre
-      h2.text-xl2 EDTOP:
-      p
-        stron Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos accusamus aliquam optio, voluptatum, quam, voluptates esse ipsa maiores itaque nobis perferendis. Vero autem laborum numquam quas est laboriosam voluptas!
+      a.mtitle.mtitle-secondary.text-xl3.mb-4.b-primary(href='#') Sobre
+      h2.text-xl3.c-primary 
+        strong EDTOP:
+      p.c-primary.text-lg
+        strong Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo dignissimos accusamus aliquam optio, voluptatum, quam, voluptates esse ipsa maiores itaque nobis perferendis. Vero autem laborum numquam quas est laboriosam voluptas!
+      .media
+        img.align-self-start.mr-3(src='assets/ellipse.png' alt='Imagem Professor Fernando')
+        .media-body
+          h3.text-xl.text-white.bgrounded.mt-0
+            span.text-danger Professor: 
+            | Fernando Marinha
+          p.text-white.bgrounded Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
