@@ -1,13 +1,14 @@
 .container
   .row
     .col-6
-      a.mtitle.mtitle-secondary.text-xl.mb-2(href='#') Cursos
-      h2.text-xl7 Vídeos Aulas
+      span.mtitle.mtitle-danger.text-xl.mb-4 Cursos
+      h2.text-xl7.mb-4.c-primary
+        strong Vídeos Aulas
       p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, officiis assumenda quasi tenetur placeat voluptate aliquam optio rerum laboriosam similique dolore perspiciatis quis, quas eaque nemo soluta velit sit. Perspiciatis.
       .group-span
         mixin span(text)
-          span
-            i.fa-solid.fa-circle-check
+          span.mx-2
+            i.fa-solid.fa-circle-check.text-success &nbsp;
             = text
         +span('Lorem Ipsum toxy')
         +span('Lorem Ipsum toxy amenium')

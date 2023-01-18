@@ -25,3 +25,16 @@
 		margin-left: 15px;
 	}
 }
+
+.nav-interative a {
+  font-size: $-lg;
+	&:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.title-global {
+  color: $edtop-primary;
+  text-transform: uppercase;
+  font-weight: 500;
+}

@@ -17,11 +17,11 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/vendors/google-fonts";
 
 // Componentes
+@import "@/styles/components/sizes.scss";
 @import "@/styles/components/fan";
 @import "@/styles/components/hello";
 @import "@/styles/components/nav-global";
 @import "@/styles/components/mtitle.scss";
-@import "@/styles/components/sizes.scss";
 @import "@/styles/components/iplay.scss";
 @import "@/styles/components/hero.scss";
 @import "@/styles/components/nav-primary.scss";
@@ -35,10 +35,6 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 body {
   font-size: 16px;
   background-color: #333;
-}
-
-h1 {
-  color: white;
 }
 
 .header {
@@ -119,4 +115,20 @@ h1 {
   background-image: url('../assets/footer-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.group-span {
+  display: flex;
+  margin-bottom: 15px;
+  i {
+    margin-right: 5px;
+  }
+  span {
+    display: flex;
+    align-items: flex-start;
+    color: $edtop-primary;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }

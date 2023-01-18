@@ -1,34 +1,38 @@
 nav.nav-global
-  figure
+  figure.title-global
     img(src="assets/logo1.svg", alt="")
     figcaption Escola de Doutrinas de Técnicas Operacionais
   .nav-interative
-    a(title="buscar")
+    a.link.link-primary(href="#" title="buscar")
       i.fa-solid.fa-magnifying-glass
-    span |
-    a(href="#" title="facebook")
+    span.mx-3 |
+    a.link.link-facebook(href="#" title="facebook")
       i.fa-brands.fa-facebook
-    a(href="#" title="instagram")
+    a.link.link-instagram(href="#" title="instagram")
       i.fa-brands.fa-instagram
-    a(href="#" title="whatsapp")
+    a.link.link-whatsapp(href="#" title="whatsapp")
       i.fa-brands.fa-whatsapp
 .hero
-  .hero-overimage
-  .container
-    .row
-      .col-8
-        article
-          a.mtitle.mtitle-secondary.text-xl.mb-2(href='#') Nós criamos produtos digitais
-          h1.text-xl6 Provendo cursos online
-          p.text-xl2 Conteúdos para consurso público, legislação, constituição, polícia legislativa.
-          div
-            a.btn.btn-danger(href="#" title="Começe agora")
-              strong Comece agora &nbsp;
-              i.fa-solid.fa-circle-arrow-right
-            span.ml-4
-              .iplay
-                .iplay-item
-                  a.iplay-hover(href='')
-                    span.iplay-icon
-                      i.iplay-i.fas.fa-play
-                    span.iplay-caption Assista agora
+  .hero-bg
+    .hero-bg2
+      img.img-fluid(src="assets/marinha.png", alt="")
+      .container
+        .row.h-100.align-items-center
+          .col-8
+            article
+              span.mtitle.mtitle-secondary.text-xl.mb-4 Nós criamos produtos digitais
+              h1.text-xl6.c-white.mb-4
+                strong Provendo cursos online
+              p.text-xl2.c-white.mb-4
+                strong Conteúdos para consurso público, legislação, constituição, polícia legislativa.
+              div
+                a.btn.btn-danger(href="#" title="Começe agora")
+                  strong Comece agora &nbsp;
+                  i.fa-solid.fa-circle-arrow-right
+                span.ml-4
+                  .iplay
+                    .iplay-item
+                      a.iplay-hover(href='')
+                        span.iplay-icon
+                          i.iplay-i.fas.fa-play
+                        span.iplay-caption Assista agora
