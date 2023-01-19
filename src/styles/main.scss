@@ -31,6 +31,7 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/components/baloon.scss";
 @import "@/styles/components/bgrounded.scss";
 @import "@/styles/components/colors.scss";
+@import "@/styles/components/gallery.scss";
 
 body {
   font-size: 16px;
@@ -115,6 +116,9 @@ body {
   background-image: url('../assets/footer-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
+  .footer-title {
+    border-bottom: 2px solid $edtop-secondary;
+  }
 }
 
 .group-span {
@@ -131,4 +135,13 @@ body {
     font-size: 18px;
     font-weight: 500;
   }
+}
+
+.copyright {
+  background-color: #222;
+  color: #ccc;
+  font-size: $-xs;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -12,9 +12,57 @@
           i.fa-brands.fa-whatsapp
       p.c-white Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolores quos fugit adipisci at amet velit autem laudantium nesciunt quo deserunt modi sunt, nostrum praesentium doloribus. Quia corrupti quasi voluptas!
     .col-3
-      h4.c-secondary
+      h4.c-white.text-lg.footer-title
         strong Menu rápido
       ul.list-unstyled
-        
+        li.mb-2
+          a.link.link-footer(href="#") 
+            i.fa-solid.fa-chevron-right.text-xs &nbsp;
+            | Home
+        li.mb-2
+          a.link.link-footer(href="#") 
+            i.fa-solid.fa-chevron-right.text-xs &nbsp;
+            | Sobre
+        li.mb-2
+          a.link.link-footer(href="#") 
+            i.fa-solid.fa-chevron-right.text-xs &nbsp;
+            | Cursos
+        li.mb-2
+          a.link.link-footer(href="#") 
+            i.fa-solid.fa-chevron-right.text-xs &nbsp;
+            | Artigos
+        li.mb-2
+          a.link.link-footer(href="#") 
+            i.fa-solid.fa-chevron-right.text-xs &nbsp;
+            | Contatos
     .col-3
+      h4.c-white.text-lg.footer-title
+        strong Galeria
+      .gallery
+        mixin image(src)
+          a(href="#")
+            img.rounded.img-fluid(src=src, alt="")
+        +image('https://unsplash.it/300/300?random&amp;seed=1')
+        +image('https://unsplash.it/300/300?random&amp;seed=2')
+        +image('https://unsplash.it/300/300?random&amp;seed=3')
+        +image('https://unsplash.it/300/300?random&amp;seed=4')
+        +image('https://unsplash.it/300/300?random&amp;seed=5')
+        +image('https://unsplash.it/300/300?random&amp;seed=6')
+        +image('https://unsplash.it/300/300?random&amp;seed=7')
+        +image('https://unsplash.it/300/300?random&amp;seed=8')
+        +image('https://unsplash.it/300/300?random&amp;seed=9')
     .col-3
+      h4.c-white.text-lg.footer-title
+        strong Contatos
+      ul.list-unstyled
+        li.mb-2
+          a.link.link-footer(href="#")
+            i.fa-solid.fa-envelope.text-danger  &nbsp;
+            strong contato@edtop.com.br
+        li.mb-2
+          a.link.link-footer(href="#")
+            i.fa-brands.fa-whatsapp.text-danger  &nbsp;
+            strong +55 61 98230-1562
+        li
+          a(href="#")
+            img.img-fluid(src="assets/logo-footer.svg" alt="Logo Edtop")
