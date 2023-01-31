@@ -68,11 +68,17 @@ $-xl9: 8rem; /* 128px */
 }
 
 .text-xl6 {	
-	font-size: $-xl6;
+	font-size: $-xl5;
+	@media (min-width: 768px) {
+		font-size: $-xl6;
+	}
 }
 
 .text-xl7 {	
-	font-size: $-xl7;
+	font-size: $-xl5;
+	@media (min-width: 768px) {
+		font-size: $-xl7;
+	}
 }
 
 .text-xl8 {	

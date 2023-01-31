@@ -2,15 +2,32 @@
   background-color: white;
   padding: 0 15px;
   display: flex;
-  justify-content: center;
+  
   box-shadow: $edtop-boxshadow;
+  @media (min-width: 992px) {
+    justify-content: center;
+  }
+  .navbar-toggler {
+    background-color: $edtop-primary;
+    border: none;
+  }
 }
+
+
 
 .nav-ul {
   margin: 0 auto;
   padding: 0;
   li {
-    list-style: none;
-    display: inline-flex;
+    display: flex;
+  }
+  a {
+    width: 100%;
+  }
+  @media (min-width: 992px) {
+    li {
+      list-style: none;
+      display: inline-flex;
+    }
   }
 }

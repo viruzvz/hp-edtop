@@ -32,6 +32,7 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/components/bgrounded.scss";
 @import "@/styles/components/colors.scss";
 @import "@/styles/components/gallery.scss";
+@import "@/styles/components/email.scss";
 
 body {
   font-size: 16px;
@@ -66,8 +67,20 @@ body {
 
 .players {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+
   .players-item {
-    margin: 15px;
+    width: 100%;
+    margin: 0 15px;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    @media (min-width: 992px) {
+      width: calc(50% - 30px);
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -78,7 +91,9 @@ body {
 }
 
 .btn-xl {
-  padding: 30px;
+  @media (min-width: 992px) {
+    padding: 30px;
+  }
 }
 
 .edtop {
@@ -144,4 +159,15 @@ body {
   padding: 15px;
   display: flex;
   justify-content: space-between;
+}
+
+.text-border {
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+}
+
+.max-50 {
+  max-width: 50%;
+  @media (min-width: 992px) {
+    max-width: 100%;
+  }
 }

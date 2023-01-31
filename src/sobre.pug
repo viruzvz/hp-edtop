@@ -1,28 +1,6 @@
 .container
   .row
-    .col-6
-      .row
-        .col-12
-          h2.text-xl6.c-primary.mb-4
-            strong Cursos em PDF
-        .col-6
-          figure
-            img.img-fluid(src="assets/book1.png" alt="apostila")
-        .col-6
-
-          ul.list-unstyled
-            mixin lipdf(text)
-              li.c-primary.text-lg.mb-4
-                i.fa-solid.fa-circle-check.text-danger &nbsp; 
-                strong
-                  = text
-            +lipdf('PDF + VÍDEO')
-            +lipdf('Constituição concursos')
-            +lipdf('Atividade legislativa')
-            +lipdf('Operações táticas')
-            +lipdf('Judiciário e penal')
-            +lipdf('Aplicações e provas')
-    .col-6
+    .col-md-6.order-md-2
       a.mtitle.mtitle-secondary.text-xl3.mb-4.b-primary(href='#') Sobre
       h2.text-xl3.c-primary 
         strong EDTOP:
@@ -35,3 +13,24 @@
             span.text-danger Professor: 
             | Fernando Marinha
           p.text-white.bgrounded Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    .col-md-6.order-md-1
+      .row
+        .col-12
+          h2.text-xl6.c-primary.mb-4
+            strong Cursos em PDF
+        .col-lg-6
+          figure
+            img.max-50.img-fluid(src="assets/book1.png" alt="apostila")
+        .col-lg-6
+          ul.list-unstyled
+            mixin lipdf(text)
+              li.c-primary.text-lg.mb-4.text-border
+                i.fa-solid.fa-circle-check.text-danger &nbsp; 
+                strong
+                  = text
+            +lipdf('PDF + VÍDEO')
+            +lipdf('Constituição concursos')
+            +lipdf('Atividade legislativa')
+            +lipdf('Operações táticas')
+            +lipdf('Judiciário e penal')
+            +lipdf('Aplicações e provas')

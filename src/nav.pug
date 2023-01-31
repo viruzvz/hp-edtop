@@ -1,6 +1,7 @@
 nav.navbar.navbar-expand-lg.nav-primary
-  a.navbar-brand(href='#') Navbar
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-    span.navbar-toggler-icon
+  a.navbar-brand(href='#')
+    img.d-block.d-lg-none(src="assets/logo1.svg", alt="")
+  button.navbar-toggler.btn.btn-primary(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+    i.fa-solid.fa-bars
   #navbarSupportedContent.collapse.navbar-collapse
     include nav-ul.pug

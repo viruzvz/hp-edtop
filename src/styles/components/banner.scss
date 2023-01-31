@@ -3,9 +3,14 @@
   height: 120px;
   background-color: #666;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 60px;
+  padding: 15px;
+  @media (min-width: 992px) {
+    padding: 0 60px;
+    flex-direction: row;
+  }
 
   .left-b, .right-b {
     top:0;
@@ -18,9 +23,13 @@
     right: 15px;
   }
   .caption {
-    max-width: 50%;
+    
     color: #fff;
     font-weight: bolder;
-    font-size: $-xl2;
+    
+    @media (min-width: 992px) {
+      max-width: 50%;
+      font-size: $-xl2;
+    }
   }
 }
