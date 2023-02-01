@@ -34,6 +34,10 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/components/gallery.scss";
 @import "@/styles/components/email.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 16px;
   background-color: #333;
@@ -170,4 +174,8 @@ body {
   @media (min-width: 992px) {
     max-width: 100%;
   }
+}
+
+.section {
+  scroll-margin-top: 50px;
 }

@@ -5,6 +5,9 @@
 	background-color: #fff;
 	border-bottom: 3px solid $edtop-secondary;
 	box-shadow: $edtop-boxshadow;
+	position: sticky;
+	top: 0;
+	z-index: 2;
 
 	> div {
 		display: flex;

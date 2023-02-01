@@ -1,140 +1,33 @@
+.search-modal {
+	form {
+		display: flex;
+	}
 
-.form-interative {
 	input {
-		border: 1px solid #ccc;
-		font-size: 12px;
-		height: 30px;
-		padding: 4px 8px;
-		position: absolute;
-		width: 50%;
-		&:focus {
-			outline: none;
+		width: 100%;
+		background-color: $edtop-primary;
+		border-color: #666;
+		color: #fff;
+
+		&::placeholder {
+			color: #f9f9f9;
 		}
 	}
-	button {
-		text-align: center;
-		&:focus {
-			outline: none;
-		}
-		&.btn-search,
-		&.btn-reset {
-			background: $edtop-primary;
-			border: none;
-			height: 30px;
-			font-size: 12px;
-			padding: 4px;
-			position: absolute;
-			width: 30px;
+
+	@media (min-width: 768px) {
+		.modal-dialog {
+			width: 100%;
+			margin: 0 auto;
 		}
 	}
-	.sample {
-		position: relative;
-		width: 34%;
-		&.one,
-		&.two {
-			input {
-				border-radius: 15px;
-				right: 0;
-				transition: all .3s ease-in-out;
-				width: 50%;
-				&:focus {
-					width: 100%;
-					~ button {
-						&.btn-search {
-							background: $edtop-primary;
-							color: #fff;
-						}
-						&.btn-reset {
-							right: -22px;
-						}
-					}
-				}
-			}
-			button {
-				transition: all .3s ease-in-out;
-				&.btn-search {
-					background: #ccc;
-					border-radius: 50%;
-					height: 26px;
-					right: 2px;
-					top: 2px;
-					transition: all .3s ease-in-out;
-					width: 26px;
-				}
-				&.btn-reset {
-					background: #fff;
-					border: 1px solid #ccc;
-					border-radius: 50%;
-					font-size: 10px;
-					height: 20px;
-					line-height: 20px;
-					padding: 0;
-					right: 5px;
-					top: 5px;
-					width: 20px;
-					z-index: -1;
-				}
-			}
-		}
-	}
-	@keyframes bounceRight {
-		0% {
-			transform: translateX(0px);
-		}
-		50% {
-			transform: translateX(10px);
-		}
-		100% {
-			transform: translateX(0px);
-		}
-	}
-	@keyframes jumpTowardSearch {
-		0% {
-			background: #ccc;
-			opacity: 1;
-			transform: rotateZ(0deg) scale(1);
-		}
-		20% {
-			background: #ccc;
-			opacity: 0;
-			transform: rotateZ(-60deg) scale(50);
-		}
-		55% {
-			background: $edtop-primary;
-			opacity: 0;
-			transform: rotateZ(-30deg) scale(100);
-		}
-		90% {
-			background: $edtop-primary;
-			opacity: 0;
-			transform: rotateZ(-30deg) scale(50);
-		}
-		100% {
-			background: $edtop-primary;
-			opacity: 1;
-			transform: rotateZ(0deg) scale(1);
-		}
-	}
-	@keyframes jumpTowardReset {
-		0% {
-			opacity: 0;
-			transform: rotateZ(0deg) scale(1);
-		}
-		20% {
-			opacity: 0;
-			transform: rotateZ(-60deg) scale(50);
-		}
-		55% {
-			opacity: 0;
-			transform: rotateZ(-30deg) scale(100);
-		}
-		90% {
-			opacity: 0;
-			transform: rotateZ(-30deg) scale(50);
-		}
-		100% {
-			opacity: 1;
-			transform: rotateZ(0deg) scale(1);
-		}
+}
+
+.btn-orange {
+	background-color: $edtop-secondary;
+	color: #fff;
+	transition: 0.3s;
+
+	&:hover {
+		color: #012b4d;
 	}
 }
