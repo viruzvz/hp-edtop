@@ -25,20 +25,20 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "@parcel/packager-raw-url": "2.8.0",
-    "@parcel/transformer-pug": "^2.8.0",
-    "@parcel/transformer-sass": "^2.8.0",
-    "@parcel/transformer-webmanifest": "2.8.0",
-    "@prettier/plugin-pug": "^2.3.0",
-    "@webcoti/eslint-config": "^1.6.1",
+    "@parcel/packager-raw-url": "2.8.3",
+    "@parcel/transformer-pug": "^2.8.3",
+    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-webmanifest": "2.8.3",
+    "@prettier/plugin-pug": "^2.4.1",
+    "@webcoti/eslint-config": "^1.7.0",
     "@webcoti/prettier-config": "^1.6.0",
     "@webcoti/stylelint-config": "^1.5.0",
     "autoprefixer": "^10.4.13",
-    "eslint": "^8.28.0",
-    "parcel": "^2.8.0",
-    "prettier": "^2.8.0",
-    "rimraf": "^3.0.2",
-    "stylelint": "^14.15.0"
+    "eslint": "^8.33.0",
+    "parcel": "^2.8.3",
+    "prettier": "^2.8.3",
+    "rimraf": "^4.1.2",
+    "stylelint": "^14.16.1"
   },
   "alias": {
     "@/*": "./src/$1",
