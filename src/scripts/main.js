@@ -1,5 +1,4 @@
 import '@/scripts/bootstrap'
-import $ from 'jquery'
 import '@/scripts/search'
 import '@/scripts/stickyActiveTop'
 import '@/scripts/activeanchor'
