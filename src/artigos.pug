@@ -1,0 +1,51 @@
+extends base.pug
+block content
+  section.content
+    .container
+      .row.py-4
+        mixin card(src, title, text)
+          .card
+            img.card-img-top(src=src alt='...')
+            .card-body
+              h5.card-title
+                = title
+              p.card-text
+                = text
+              a.btn.btn-danger(href='#') Go somewhere
+        .col-md-4
+          +card('https://unsplash.it/1280/768?random=1', 'Titulo', 'Lorem ipsum argument')
+        .col-md-4
+          +card('https://unsplash.it/1280/768?random=2', 'Titulo', 'Lorem ipsum argument')
+        .col-md-4
+          +card('https://unsplash.it/1280/768?random=3', 'Titulo', 'Lorem ipsum argument')
+  section.b-white
+    .container
+      .row.py-4
+        mixin posted(src, title, text)
+          .posted.mb-4
+            figure
+              img.img-fluid.rounded(src=src, alt="")
+            h2 
+              = title
+            p
+              = text
+            small Publicado em: 
+              .badge.badge-danger 12/01/2023
+        article.col-lg-9
+          +posted('https://unsplash.it/1280/768?random=4', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
+        aside.col-lg-3
+          mixin widget(text)
+            .widget.mb-4
+              .title-wrapper
+                .title-line
+                  a.link.link-default(href='#')
+                    span
+                      = text
+              ul
+                li
+                  a(href="#") Lorem 1
+                li
+                  a(href="#") Lorem 2
+                li
+                  a(href="#") Lorem 3
+          +widget('Categorias')

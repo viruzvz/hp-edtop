@@ -1,0 +1,15 @@
+.title-line {
+  border-bottom: 2px solid $edtop-secondary;
+  position: absolute;
+  bottom: -2px;
+  font-size: 16px;
+  color: #012b4d;
+  font-weight: bold;
+}
+
+.title-wrapper {
+  border-bottom: 2px solid #ccc;
+  position: relative;
+  min-height: 26px;
+  margin-bottom: 15px;
+}

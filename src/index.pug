@@ -1,55 +1,12 @@
-doctype html
-html(lang="pt")
+<!DOCTYPE html>
+html(lang="en")
   head
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-    meta(name='description' content='Escola de doutrinas de técnicas operacionais, vídeo aulas, apostilas digitais.')
-    meta(name='keywords' content='Vídeos, PDF, Concursos, Polícia Legislativa')
-    meta(name='author' content='Fernando Marinha - Desenvolvido por Carlos vz' <='' body='')
-    title EDTOP - ESCOLA DE DOUTRINAS DE TÉCNICAS OPERACIONAIS
-    link(rel='stylesheet', href='styles/main.scss')
-    link(rel='apple-touch-icon' sizes='57x57' href='assets/favicon/apple-icon-57x57.png')
-    link(rel='apple-touch-icon' sizes='60x60' href='assets/favicon/apple-icon-60x60.png')
-    link(rel='apple-touch-icon' sizes='72x72' href='assets/favicon/apple-icon-72x72.png')
-    link(rel='apple-touch-icon' sizes='76x76' href='assets/favicon/apple-icon-76x76.png')
-    link(rel='apple-touch-icon' sizes='114x114' href='assets/favicon/apple-icon-114x114.png')
-    link(rel='apple-touch-icon' sizes='120x120' href='assets/favicon/apple-icon-120x120.png')
-    link(rel='apple-touch-icon' sizes='144x144' href='assets/favicon/apple-icon-144x144.png')
-    link(rel='apple-touch-icon' sizes='152x152' href='assets/favicon/apple-icon-152x152.png')
-    link(rel='apple-touch-icon' sizes='180x180' href='assets/favicon/apple-icon-180x180.png')
-    link(rel='icon' type='image/png' sizes='192x192' href='assets/favicon/android-icon-192x192.png')
-    link(rel='icon' type='image/png' sizes='32x32' href='assets/favicon/favicon-32x32.png')
-    link(rel='icon' type='image/png' sizes='96x96' href='assets/favicon/favicon-96x96.png')
-    link(rel='icon' type='image/png' sizes='16x16' href='assets/favicon/favicon-16x16.png')
-    link(rel='icon' href='assets/favicon/favicon.ico' sizes='any')
-    link(rel='icon' type='image/svg+xml' href='assets/favicon/icon.svg')
-    link(rel='manifest' href='assets/favicon/manifest.json')
-    meta(name='msapplication-TileColor' content='#ffffff')
-    meta(name='msapplication-TileImage' content='assets/favicon/ms-icon-144x144.png')
-    meta(name='theme-color' content='#ffffff')
-
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title EDTOP
   body
-    header
-      include header.pug
-    section.content
-      include nav.pug
-      section.py-5.cursos#sec2
-        include cursos.pug
-      section.py-5.videos
-        include videos.pug
-      section.py-5.sobre#sec3
-        include sobre.pug
-      section.edtop
-        include edtop.pug
-      section.contatos#sec4
-        include contatos.pug
-    footer.py-5.footer
-      include footer.pug
-      include buscar.pug
-    .copyright
-      span Copyright ® 2023. Todos os direitos reservados https://www.edtop.org.br
-      span Desenvolvido por 
-        a.link.link-footer(href="#") Carlos vz
-
-    script(type='module', src='scripts/main.js')
-    script(src='../node_modules/jquery/dist/jquery.js')
+    h1 Bem vindo ao protótipo funcional Edtop
+    ul
+      li
+        a(href="home.pug") Home

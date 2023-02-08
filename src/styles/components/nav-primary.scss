@@ -13,6 +13,11 @@
   .navbar-toggler {
     background-color: $edtop-primary;
     border: none;
+    &:after {
+      font-family: "Font Awesome 6 Free";
+      content:"\f0c9";
+      position: absolute;
+    }
   }
   .navbar-brand {
     display: none;
