@@ -19,7 +19,7 @@
   display: inline-flex;
   position: relative;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: $transition;
   &:hover {
     span {
       color: #ccc;
@@ -40,7 +40,7 @@
   line-height: 48px;
   text-align: center;
   position: relative;
-  transition: all 0.3s ease;
+  transition: $transition;
 
   &::before, &::after {
     content: "";

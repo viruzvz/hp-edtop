@@ -1,0 +1,29 @@
+.posts {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  a {
+    color: $edtop-primary;
+    transition: $transition;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $edtop-secondary;
+  }
+  figure {
+    overflow: hidden;
+  }
+}
+
+.posts.dotted {
+  border-bottom: 1px dotted #ccc;
+}
+
+/* Zoom In #1 */
+.posts figure img {
+	transform: scale(1);
+	transition: .3s ease-in-out;
+}
+.posts figure:hover img {
+	transform: scale(1.3);
+}

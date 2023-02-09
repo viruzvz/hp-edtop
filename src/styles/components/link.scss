@@ -1,5 +1,5 @@
 .link {
-	transition: all 0.2s linear;
+	transition: $transition;
 		&:hover {
 			text-decoration: none;
 		}

@@ -12,12 +12,10 @@
   }
   .navbar-toggler {
     background-color: $edtop-primary;
-    border: none;
-    &:after {
-      font-family: "Font Awesome 6 Free";
-      content:"\f0c9";
-      position: absolute;
-    }
+    min-width: 30px;
+    min-height: 30px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
   }
   .navbar-brand {
     display: none;

@@ -11,6 +11,10 @@ $twitter: #00ACEE;
 // shadows 
 $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 
+// transition
+
+$transition: all 0.3s ease;
+
 // Vendors
 @import "@/styles/vendors/bootstrap";
 @import "@/styles/vendors/font-awesome";
@@ -34,6 +38,11 @@ $edtop-boxshadow: 0 5px 10px 0 rgba(0,0,0,0.4);
 @import "@/styles/components/gallery.scss";
 @import "@/styles/components/email.scss";
 @import "@/styles/components/title-line.scss";
+@import "@/styles/components/card.scss";
+@import "@/styles/components/widget.scss";
+@import "@/styles/components/posts.scss";
+@import "@/styles/components/backtotop.scss";
+@import "@/styles/components/navbar-toggle.scss";
 
 html {
   scroll-behavior: smooth;
@@ -93,6 +102,13 @@ body {
   height: 13px;
   background-image: url('../assets/divider.png');
   background-repeat: repeat-x;
+}
+
+.paginacao {
+  @media (min-width: 992px) {
+    margin-bottom: 0;
+  }
+  margin-bottom: 30px;
 }
 
 .btn-xl {

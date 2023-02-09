@@ -1,0 +1,14 @@
+.card {
+  
+  margin-bottom: 15px;
+  @media (min-width: 768px) {
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

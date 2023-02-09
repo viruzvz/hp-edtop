@@ -3,6 +3,10 @@
 		display: flex;
 	}
 
+  .modal-content {
+    background-color: $edtop-primary;
+  }
+
 	input {
 		width: 100%;
 		background-color: $edtop-primary;
@@ -10,7 +14,7 @@
 		color: #fff;
 
 		&::placeholder {
-			color: #f9f9f9;
+			color: #ccc;
 		}
 	}
 
@@ -25,7 +29,7 @@
 .btn-orange {
 	background-color: $edtop-secondary;
 	color: #fff;
-	transition: 0.3s;
+	transition: $transition;
 
 	&:hover {
 		color: #012b4d;

@@ -1,6 +1,7 @@
 extends base.pug
 block content
   section.content
+    include nav.pug
     .container
       .row.py-4
         mixin card(src, title, text)
@@ -11,41 +12,76 @@ block content
                 = title
               p.card-text
                 = text
-              a.btn.btn-danger(href='#') Go somewhere
+              a.btn.btn-danger(href='#') 
+                i.fa-solid.fa-eye &nbsp;
+                | Veja mais
         .col-md-4
-          +card('https://unsplash.it/1280/768?random=1', 'Titulo', 'Lorem ipsum argument')
+          +card('https://unsplash.it/1280/768?random=1', 'Titulo', 'Lorem ipsum argument dolor sit amet consectetur adipisicing elit. Repellat,')
         .col-md-4
           +card('https://unsplash.it/1280/768?random=2', 'Titulo', 'Lorem ipsum argument')
         .col-md-4
           +card('https://unsplash.it/1280/768?random=3', 'Titulo', 'Lorem ipsum argument')
-  section.b-white
-    .container
-      .row.py-4
-        mixin posted(src, title, text)
-          .posted.mb-4
-            figure
-              img.img-fluid.rounded(src=src, alt="")
-            h2 
-              = title
-            p
-              = text
-            small Publicado em: 
-              .badge.badge-danger 12/01/2023
-        article.col-lg-9
-          +posted('https://unsplash.it/1280/768?random=4', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
-        aside.col-lg-3
-          mixin widget(text)
-            .widget.mb-4
-              .title-wrapper
-                .title-line
-                  a.link.link-default(href='#')
+    section.b-white
+      .container
+        .row.py-4
+          mixin posted(src, title, text)
+            .posts.dotted.mb-4
+              figure
+                a(href="#")
+                  img.img-fluid.rounded(src=src, alt="")
+              h2
+                a(href='#')
+                  = title
+              p
+                = text
+              small
+                i.fa-solid.fa-calendar-days &nbsp;
+                | Publicado em: 
+                .badge.badge-danger 12/01/2023
+                | &nbsp;
+                i.fa-solid.fa-user &nbsp;
+                | Por: 
+                .badge.badge-secondary Admin
+          article.col-lg-9
+            +posted('https://unsplash.it/1280/768?random=4', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
+            +posted('https://unsplash.it/1280/768?random=5', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
+            +posted('https://unsplash.it/1280/768?random=6', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
+            +posted('https://unsplash.it/1280/768?random=7', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
+            +posted('https://unsplash.it/1280/768?random=8', 'Título', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, itaque ex ea laborum est quisquam sequi, dolore accusantium sit tempore blanditiis tempora voluptatibus porro atque eaque ad vel velit voluptate.')
+            .paginacao
+              a.btn.btn-danger(href="#") 
+                i.fa-solid.fa-chevron-left
+                | Voltar
+              | &nbsp;
+              a.btn.btn-danger(href="#")
+                | Próximo
+                i.fa-solid.fa-chevron-right
+          aside.col-lg-3
+            mixin widget(text)
+              .widget.mb-4
+                .title-wrapper
+                  .title-line
                     span
                       = text
-              ul
-                li
-                  a(href="#") Lorem 1
-                li
-                  a(href="#") Lorem 2
-                li
-                  a(href="#") Lorem 3
-          +widget('Categorias')
+                ul.widget-menu
+                  li
+                    a(href="#") Lorem 1
+                  li
+                    a(href="#") Lorem 2
+                  li
+                    a(href="#") Lorem 3
+            +widget('Categorias')
+            +widget('Últimos Posts')
+            +widget('Acessar')
+        .row 
+          .col-12.py-5
+            .divider
+          .col-12.mb-5
+            .banner
+              .caption
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolorum!
+              a.btn.btn-danger.btn-xl(href="#" title="Adquirir todos os Cursos")
+                strong Adquirir Todos os Cursos 
+                i.fa-solid.fa-circle-arrow-right
+              img.left-b(src="assets/left-b.svg")
+              img.right-b(src="assets/right-b.svg")
