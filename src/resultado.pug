@@ -1,0 +1,71 @@
+extends base.pug
+block content
+  section.content.b-white
+    include nav.pug
+    .container
+      .row.py-4
+        mixin result(src, title)
+          a.media.mb-4.link.link-primary(href="#")
+            img.rounded.img-fluid.w-25.mr-3(src=src alt='...')
+            .media-body
+              h5.mt-0
+                = title
+              small
+                i.fa-solid.fa-calendar-days &nbsp;
+                | Publicado em: 
+                .badge.badge-danger 12/01/2023
+                | &nbsp;
+                i.fa-solid.fa-user &nbsp;
+                | Por: 
+                .badge.badge-secondary Admin
+          hr
+        .col-12
+          span.mtitle.mtitle-danger.text-xl.mb-4 Resultados da pesquisa:
+          span.c-primary.text-xl2  
+            i.fa-solid.fa-magnifying-glass(aria-hidden="true") &nbsp;
+            | Lorem ipsum, dolor sit 
+        article.col-lg-9
+          +result('https://unsplash.it/1280/768?random=8', 'Cras sit amet nibh libero, in gravida nulla.')
+          +result('https://unsplash.it/1280/768?random=9', 'Nulla vel metus scelerisque ante sollicitudin.')
+          +result('https://unsplash.it/1280/768?random=10', 'Cras sit amet nibh libero, in gravida nulla.')
+          +result('https://unsplash.it/1280/768?random=11', 'Nulla vel metus scelerisque ante sollicitudin.')
+          +result('https://unsplash.it/1280/768?random=12', 'Cras sit amet nibh libero, in gravida nulla.')
+          .paginacao
+            a.btn.btn-danger(href="#") 
+              i.fa-solid.fa-chevron-left
+              | Voltar
+            | &nbsp;
+            a.btn.btn-danger(href="#")
+              | Próximo
+              i.fa-solid.fa-chevron-right
+        aside.col-lg-3
+          mixin widget(text)
+            .widget.mb-4
+              .title-wrapper
+                .title-line
+                  span
+                    = text
+              ul.widget-menu
+                li
+                  a(href="#") Lorem 1
+                li
+                  a(href="#") Lorem 2
+                li
+                  .embed-responsive.embed-responsive-4by3
+                    iframe.embed-responsive-item(src='https://www.youtube.com/embed/Zk_Ne2dJxYk')
+                  
+          +widget('Categorias')
+          +widget('Últimos Posts')
+          +widget('Acessar')
+      .row 
+        .col-12.py-5
+          .divider
+        .col-12.mb-5
+          .banner
+            .caption
+              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolorum!
+            a.btn.btn-danger.btn-xl(href="#" title="Adquirir todos os Cursos")
+              strong Adquirir Todos os Cursos 
+              i.fa-solid.fa-circle-arrow-right
+            img.left-b(src="assets/left-b.svg")
+            img.right-b(src="assets/right-b.svg")

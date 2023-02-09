@@ -18,12 +18,3 @@
 .posts.dotted {
   border-bottom: 1px dotted #ccc;
 }
-
-/* Zoom In #1 */
-.posts figure img {
-	transform: scale(1);
-	transition: .3s ease-in-out;
-}
-.posts figure:hover img {
-	transform: scale(1.3);
-}
