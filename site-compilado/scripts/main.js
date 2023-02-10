@@ -3,9 +3,9 @@ const el = document.querySelector(".nav-primary")
 const observer = new IntersectionObserver( 
   ([e]) => e.target.classList.toggle("is-pinned", e.intersectionRatio < 1),
   { threshold: [1] }
-);
+)
 
-observer.observe(el);
+observer.observe(el)
 
 // Aciona focus no input ao abrir modal bootstrap
 $(document).ready(function(){
@@ -18,21 +18,38 @@ $(document).ready(function(){
 const textElement = document.getElementById("text")
 
 // active menu when scroll
-const sections = document.querySelectorAll("section");
-const navLi = document.querySelectorAll(".content .nav-primary .navbar-collapse .nav-ul li");
+const sections = document.querySelectorAll("section")
+const navLi = document.querySelectorAll(".content .nav-primary .navbar-collapse .nav-ul li")
 window.onscroll = () => {
-  var current = "";
+  var current = ""
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
+    const sectionTop = section.offsetTop
     if (pageYOffset >= sectionTop - 60) {
-      current = section.getAttribute("id"); }
-  });
+      current = section.getAttribute("id") }
+  })
 
   navLi.forEach((li) => {
-    li.classList.remove("active");
+    li.classList.remove("active")
     if (li.classList.contains(current)) {
-      li.classList.add("active");
+      li.classList.add("active")
     }
-  });
-};
+  })
+}
+
+// botão voltar ao topo
+var btn = $('.backtotop')
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show')
+  } else {
+    btn.removeClass('show')
+  }
+})
+
+btn.on('click', function(e) {
+  e.preventDefault()
+  $('html, body').animate({scrollTop:0}, '300')
+})
+
