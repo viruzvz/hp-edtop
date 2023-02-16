@@ -1,0 +1,67 @@
+// social
+$facebook: #3B5998;
+$instagram: #DD2A7B;
+$youtube: #E62117;
+$whatsapp: #25D366;
+$twitter: #00ACEE;
+
+
+.embed-responsive-3by2:before {
+  padding-bottom: 66.667%;
+}
+
+.object-fit {
+  object-fit: cover;
+}
+
+.nav-social.nav-footer {
+  li .nav-link {
+    color: #fff;
+  }
+}
+
+.nav-social {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+    .nav-link {
+      padding: inherit;
+      display: inline;
+      color: #101946;
+      transition: all .3s;
+    }
+  }
+  .link-facebook {
+    a:hover {
+      color: $facebook;
+    }
+  }
+  .link-instagram {
+    a:hover {
+      color: $instagram;
+    }
+  }
+  .link-youtube {
+    a:hover {
+      color: $youtube;
+    }
+  }
+  .link-whatsapp {
+    a:hover {
+      color: $whatsapp;
+    }
+  }
+  .link-twitter {
+    a:hover {
+      color: $twitter;
+    }
+  }
+}
+
+.youtube {
+  
+}
