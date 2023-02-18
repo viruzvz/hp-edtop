@@ -1,6 +1,6 @@
 <?php if( is_single() ) : ?>
 
-    <div class="dotted mb-4 posts">
+    <article class="dotted mb-4 posts">
         <figure>
             <?php if ( has_post_thumbnail() ) : ?>
             <figure class="m-0 embed-responsive embed-responsive-3by2" >
@@ -16,16 +16,16 @@
             <i class="fa-calendar-days fa-solid">&nbsp;</i>Publicado em:
             <div class="badge badge-danger"><?php echo get_the_date(); ?></div>
             &nbsp;<i class="fa-solid fa-user">&nbsp;</i>Por:
-            <div class="badge badge-secondary"><?php echo get_current_user_id(); ?></div>
+            <div class="badge badge-secondary"><?php echo get_the_author_meta('display_name', $author_id); ?></div>
         </small>
-    </div>
+    </article>
     <div>
         <?php comments_template(); ?>
     </div>
 
 <?php else : ?>
 
-    <div class="dotted mb-4 posts zoom">
+    <article class="dotted mb-4 posts zoom">
         <figure>
             <?php if ( has_post_thumbnail() ) : ?>
             <a 
@@ -44,8 +44,8 @@
             <i class="fa-calendar-days fa-solid">&nbsp;</i>Publicado em:
             <div class="badge badge-danger"><?php echo get_the_date(); ?></div>
             &nbsp;<i class="fa-solid fa-user">&nbsp;</i>Por:
-            <div class="badge badge-secondary"><?php echo get_current_user_id(); ?></div>
+            <div class="badge badge-secondary"><?php echo get_the_author_meta('display_name', $author_id); ?></div>
         </small>
-    </div>
+    </article>
 
 <?php endif; ?>

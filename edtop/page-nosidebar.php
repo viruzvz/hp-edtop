@@ -1,10 +1,12 @@
+<?php /* Template name: Sem barra lateral */ ?>
+
 <?php get_header(); ?>
 <section class="content">
     <?php get_template_part('nav'); ?>
     <section class="page b-white py-4">
         <div class="container">
             <div class="row">
-                <article class="col-9">
+                <article class="col-12">
                     <?php if(have_posts()) : while(have_posts()) : the_post(); ?>   
                     
                         <div class="page">
@@ -15,7 +17,6 @@
                     <?php endwhile; ?>
                     <?php else : get_404_template(); endif; ?>
                 </article>
-                <?php get_sidebar(); ?>
             </div>
             <div class="row">
                 <div class="col-12 py-5"><div class="divider"></div></div>

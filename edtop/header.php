@@ -38,10 +38,27 @@
     <body>
         <header>
             <nav class="nav-global">
-                <figure class="title-global">
-                    <img src="<?php bloginfo('template_url'); ?>/assets/logo1.3888a31f.svg" alt />
-                    <figcaption><?php echo get_bloginfo('description');?></figcaption>
-                </figure>
+                <a class="link" href="<?php echo get_home_url(); ?>">
+                    <figure class="title-global">
+                     
+                        <?php if( has_custom_logo() ):  ?>
+                        <?php 
+                            // Get Custom Logo URL
+                            $custom_logo_id = get_theme_mod( 'custom_logo' );
+                            $custom_logo_data = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+                            $custom_logo_url = $custom_logo_data[0];
+                        ?>
+
+                            <img class="img-fluid" src="<?php echo esc_url( $custom_logo_url ); ?>" 
+                                alt="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>"/>
+
+                        <?php else: ?>
+                            <div class="site-name"><?php bloginfo( 'name' ); ?></div>
+                        <?php endif; ?>
+
+                        <figcaption><?php echo get_bloginfo('description');?></figcaption>
+                    </figure>
+                </a>
                 <div class="nav-interative">
                     <a class="d-lg-block d-none link link-primary" href="#" title="buscar" data-toggle="modal" data-target="#buscarModal"><i class="fa-magnifying-glass fa-solid"></i></a><span class="mx-3">|</span>
                     <?php
@@ -58,7 +75,8 @@
             <div class="hero">
                 <div class="hero-bg">
                     <div class="hero-bg2">
-                        <img class="hero-prog img-fluid" src="assets/marinha.065b64a7.png" alt />
+                        <img class="hero-prog img-fluid" src="<?php bloginfo('template_url'); ?>/assets/marinha.065b64a7.png" alt="Logo Edtop" />
+
                         <div class="container">
                             <div class="align-items-center h-100 row">
                                 <div class="col-sm-8">
