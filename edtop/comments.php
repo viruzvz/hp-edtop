@@ -22,7 +22,7 @@
             'title_reply' => 'Escreva sua resposta',
             'title_reply_before' => '<h6 id="reply-title" class="comment-reply-title mt-4">',
             'title_reply_after' => '</h6>',
-            'class_submit' => 'btn btn-danger',
+            'class_submit' => 'btn btn-my-color-5',
             'comment_notes_before' => '<p>Seu e-mail não será publicado.</p>',
             'fields' => apply_filters( 'comment_form_default_fields', array(
                 'author' => '<div class="row"><div class="col-md-6 col-sm-12"><div class="form-group">' .
@@ -51,7 +51,7 @@
             'title_reply' => 'Escreva sua resposta',
             'title_reply_before' => '<h6 id="reply-title" class="comment-reply-title mt-4">',
             'title_reply_after' => '</h6>',
-            'class_submit' => 'btn btn-danger',
+            'class_submit' => 'btn btn-my-color-5',
             'comment_notes_before' => '<p>Seu e-mail não será publicado.</p>',
             'fields' => apply_filters( 'comment_form_default_fields', array(
                 'author' => '<div class="row"><div class="col-md-6 col-sm-12"><div class="form-group">' .

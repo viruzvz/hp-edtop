@@ -16,7 +16,7 @@
             <i class="fa-calendar-days fa-solid">&nbsp;</i>Publicado em:
             <div class="badge badge-danger"><?php echo get_the_date(); ?></div>
             &nbsp;<i class="fa-solid fa-user">&nbsp;</i>Por:
-            <div class="badge badge-secondary"><?php echo get_the_author_meta('display_name', $author_id); ?></div>
+            <div class="badge badge-secondary"><?php echo get_the_author(); ?></div>
         </small>
     </article>
     <div>
@@ -44,7 +44,7 @@
             <i class="fa-calendar-days fa-solid">&nbsp;</i>Publicado em:
             <div class="badge badge-danger"><?php echo get_the_date(); ?></div>
             &nbsp;<i class="fa-solid fa-user">&nbsp;</i>Por:
-            <div class="badge badge-secondary"><?php echo get_the_author_meta('display_name', $author_id); ?></div>
+            <div class="badge badge-secondary"><?php echo get_the_author(); ?></div>
         </small>
     </article>
 

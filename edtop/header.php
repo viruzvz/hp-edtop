@@ -72,37 +72,7 @@
                       ?>
                 </div>
             </nav>
-            <div class="hero">
-                <div class="hero-bg">
-                    <div class="hero-bg2">
-                        <img class="hero-prog img-fluid" src="<?php bloginfo('template_url'); ?>/assets/marinha.065b64a7.png" alt="Logo Edtop" />
-
-                        <div class="container">
-                            <div class="align-items-center h-100 row">
-                                <div class="col-sm-8">
-                                    <article>
-                                        <span class="mb-4 mtitle mtitle-secondary">Nós criamos produtos digitais</span>
-                                        <h1 class="c-white mb-4 text-xl6"><strong>Provendo cursos online</strong></h1>
-                                        <p class="c-white mb-4 text-xl"><strong>Conteúdos para consurso público, legislação, constituição, polícia legislativa.</strong></p>
-                                        <div>
-                                            <a class="btn btn-danger" href="#" title="Começe agora"><strong>Comece agora &nbsp;</strong><i class="fa-circle-arrow-right fa-solid"></i></a>
-                                            <span class="ml-4">
-                                                <div class="iplay">
-                                                    <div class="iplay-item">
-                                                        <a class="iplay-hover" href>
-                                                            <span class="iplay-icon"><i class="fa-play fas iplay-i"></i></span><span class="iplay-caption">Assista agora</span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </span>
-                                        </div>
-                                    </article>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php get_template_part('hero'); ?>
         </header>
     </body>
 </html>

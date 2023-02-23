@@ -109,6 +109,45 @@ function format_comment($comment, $args, $depth) {
 
 }
 
+// Criar o tipo de post para o hero
+function create_post_type() {
+
+    register_post_type('hero',
+    // Definir as opções
+    array(
+        'labels' => array(
+            'name' => __('Hero'),
+            'singular_name' => __('Hero')
+        ),
+        'show_in_rest' => true,
+        'supports' => array(
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-images-alt2',
+        'rewrite' => array('slug' => 'hero'),
+    ));
+
+    register_post_type('cursos',
+    // Definir as opções
+    array(
+        'labels' => array(
+            'name' => __('Cursos'),
+            'singular_name' => __('Cursos')
+        ),
+        
+        'supports' => array(
+            'title', 'editor', 'author'
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-images-alt2',
+        'rewrite' => array('slug' => 'cursos'),
+    ));
+}
+//Iniciar o tipo de post
+add_action('init', 'create_post_type');
 
 // Incluir as funções de personalização
 require get_template_directory(). '/inc/customizer.php';

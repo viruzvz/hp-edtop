@@ -62,6 +62,22 @@ $twitter: #00ACEE;
   }
 }
 
-.youtube {
-  
+.aiovg {
+  .aiovg-title {
+    color: #101946;
+    font-size: 0.8ren;
+  }
+
+  .aiovg-link-title {
+    color: #101946;
+    transition: all .3s;
+    &:hover {
+        color: #ccaa3c;
+        text-decoration: none;
+    }
+  }
+}
+
+.widget-search {
+  display: flex;  
 }
