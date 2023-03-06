@@ -1,5 +1,5 @@
 <nav class="nav-primary navbar navbar-expand-lg" role="navigation">
-    <a class="navbar-brand" href="#"><img src="assets/logo1.3888a31f.svg" alt="Logo"></a>
+    <a class="navbar-brand" href="#"><img src="<?php bloginfo('template_url'); ?>/assets/logo1.3888a31f.svg" alt="Logo"></a>
 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="buttons">

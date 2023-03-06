@@ -27,6 +27,14 @@ if (!function_exists('_wp_render_title_tag')) {
 
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 
+// add classe no menu
+
+function _cursetheme_modify_menuclass($ulclass) {
+    return preg_replace('/<a /', '<a class="nav-link link link-nav"', $ulclass);
+}
+
+add_filter('wp_nav_menu', '_cursetheme_modify_menuclass');
+
 // registrar os menus
 register_nav_menus( array(
     'principal' => __('Menu principal', 'cursetheme'),
@@ -144,6 +152,24 @@ function create_post_type() {
         'has_archive' => true,
         'menu_icon' => 'dashicons-images-alt2',
         'rewrite' => array('slug' => 'cursos'),
+    ));
+
+    register_post_type('sobre',
+    // Definir as opções
+    array(
+        'labels' => array(
+            'name' => __('Sobre'),
+            'singular_name' => __('Sobre')
+        ),
+        
+        'show_in_rest' => true,
+        'supports' => array(
+            'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments'
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'menu_icon' => 'dashicons-images-alt2',
+        'rewrite' => array('slug' => 'sobre'),
     ));
 }
 //Iniciar o tipo de post
